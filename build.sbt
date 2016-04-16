@@ -1,11 +1,10 @@
-name := "hello-world"
+name := "helloworld"
 
 version := "0.01"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-swing" % "2.10.3",
-  "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
+  "org.scala-lang" % "scala-swing" % "2.11.0-M7",
+  "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 )
-
