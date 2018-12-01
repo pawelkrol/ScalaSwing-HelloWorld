@@ -2,7 +2,7 @@ lazy val root = (project in file(".")).settings(
   javaOptions += "-Xmx1G",
   name := "helloworld",
   scalaVersion := "2.12.7",
-  version := "0.03-SNAPSHOT"
+  version := "0.03"
 )
 
 fork in run := true
