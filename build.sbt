@@ -1,8 +1,8 @@
 lazy val root = (project in file(".")).settings(
   javaOptions += "-Xmx1G",
   name := "helloworld",
-  scalaVersion := "2.12.7",
-  version := "0.03"
+  scalaVersion := "2.13.0",
+  version := "0.04-SNAPSHOT"
 )
 
 fork in run := true
@@ -10,8 +10,8 @@ fork in run := true
 maxErrors := 1
 
 libraryDependencies ++= Seq(
-  "org.scala-lang.modules" % "scala-swing_2.12" % "2.0.3",
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+  "org.scala-lang.modules" %% "scala-swing" % "2.1.1",
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test"
 )
 
 artifactName := { (sv: ScalaVersion, module: ModuleID, artifact: Artifact) =>
