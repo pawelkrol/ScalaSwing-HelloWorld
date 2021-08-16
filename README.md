@@ -8,7 +8,7 @@ This `Hello World` application is setup with [sbt 1.3.13](http://www.scala-sbt.o
 VERSION
 -------
 
-Version 0.06-SNAPSHOT (2021-08-16)
+Version 0.06 (2021-08-16)
 
 INSTALLATION
 ------------
@@ -26,7 +26,7 @@ In order to build and run an application JAR type the following:
     $ git clone git://github.com/pawelkrol/ScalaSwing-HelloWorld.git
     $ cd ScalaSwing-HelloWorld
     $ sbt clean update compile test package proguard:proguard run
-    $ java -Dfile.encoding=UTF8 -jar target/scala-2.13/proguard/helloworld-0.06-SNAPSHOT.jar
+    $ java -Dfile.encoding=UTF8 -jar target/scala-2.13/proguard/helloworld-0.06.jar
 
 COPYRIGHT AND LICENCE
 ---------------------
