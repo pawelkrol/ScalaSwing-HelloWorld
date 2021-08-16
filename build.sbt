@@ -1,8 +1,8 @@
 lazy val root = (project in file(".")).settings(
   javaOptions += "-Xmx1G",
   name := "helloworld",
-  scalaVersion := "2.13.4",
-  version := "0.05"
+  scalaVersion := "2.13.6",
+  version := "0.06-SNAPSHOT"
 )
 
 fork in run := true
@@ -11,7 +11,7 @@ maxErrors := 1
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-swing" % "3.0.0",
-  "org.scalatest" %% "scalatest" % "3.2.3" % "test"
+  "org.scalatest" %% "scalatest" % "3.2.9" % "test"
 )
 
 artifactName := { (sv: ScalaVersion, module: ModuleID, artifact: Artifact) =>
@@ -28,4 +28,4 @@ Proguard / proguardOptions += ProguardOptions.keepMain("org.domain.your.HelloWor
 
 Proguard / proguardOptions += ProguardConf.helloWorld
 
-Proguard / proguardVersion := "7.0.0"
+Proguard / proguardVersion := "7.1.1"
