@@ -1,4 +1,4 @@
-package org.domain.your.HelloWorld
+package com.github.pawelkrol.HelloWorld
 
 import swing.{Dimension, Label, MainFrame, SimpleSwingApplication}
 
@@ -11,4 +11,3 @@ object Main extends SimpleSwingApplication {
     }
   }
 }
-
