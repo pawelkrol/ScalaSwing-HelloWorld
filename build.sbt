@@ -10,7 +10,7 @@ lazy val root = (project in file(".")).settings(
     "-language:implicitConversions",
     "-unchecked",
     "-Xfatal-warnings"),
-  version := "1.0.0-SNAPSHOT")
+  version := "1.0.0")
 
 run / fork := true
 
